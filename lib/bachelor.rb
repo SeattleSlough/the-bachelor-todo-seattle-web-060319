@@ -51,9 +51,11 @@ def get_occupation(data, hometown)
 end
 
 def get_average_age_for_season(data, season)
-  age_array = []
+  age_total = 0
+  count = 0
   data[season].each do |contestants|
-    age_array.push(contestants["age"])
+    age_total += contestants["age"].to_i
+    count += 1
   end
   binding.pry
   age_array
