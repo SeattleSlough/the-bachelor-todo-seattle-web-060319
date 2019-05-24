@@ -58,5 +58,4 @@ def get_average_age_for_season(data, season)
     count += 1
   end
   binding.pry
-  age_array
 end
